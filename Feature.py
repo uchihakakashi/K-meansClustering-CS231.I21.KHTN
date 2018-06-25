@@ -202,7 +202,7 @@ def evaluation(imgSrc, imgGT, segments, k):
         
 if __name__ == "__main__":
     # load hinh anh
-    img = cv2.imread("test\case2\cat1.jpg")
+    img = cv2.imread("test\case0\cat0.jpg")
     
     # contrast strccting mot buc anh
     img = constrastStrecting(img)
@@ -223,7 +223,7 @@ if __name__ == "__main__":
     imgModify(img,segments,k)
     
     # load hinh anh phan biet background voi foreground duoc thuc hien thu cong bang tay
-    imgGT = cv2.imread("test\case2\cat1gt.jpg",0)
+    imgGT = cv2.imread("test\case0\cat0gt.jpg",0)
     
     #danh gia do chinh xac
     evals = evaluation(img, imgGT, segments, k)
